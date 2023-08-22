@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url(jungle.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.container
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s linear forwards;
+}
+@keyframes fadeIn{
+    0%
+    {
+        transform: scale(5);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+#h1
+{
+    background: linear-gradient(to right,red,rgb(18, 38, 221));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+#span1
+{
+    animation: righttrans 5s 1;
+}
+#span2
+{
+    animation: lefttrans 5s 1;
+}
+@keyframes righttrans
+{
+    0%
+    {
+        margin-right: 225px;
+    }
+    100%
+    {
+        margin-right: 0px;
+    }
+}
+@keyframes lefttrans
+{
+    0%
+    {
+        margin-left: 225px;
+    }
+    100%
+    {
+        margin-left: 0px;
+    }
+}
+#start{
+    padding: 25px 75px;
+    border-radius: 30px;
+    border: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(to left,pink,red);
+}
+#start{
+    cursor: pointer;
+}
